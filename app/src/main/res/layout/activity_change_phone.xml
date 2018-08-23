@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.my.change.phone.ChangePhoneActivity"
+    android:background="@android:color/white">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+
+    <TextView android:id="@+id/tv_pwd_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextMain"
+        android:text="原手机号收不到验证码?" />
+    <RelativeLayout
+        android:id="@+id/rl_fm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ic_head"
+        android:layout_above="@+id/tv_pwd_phone">
+
+    </RelativeLayout>
+</RelativeLayout>

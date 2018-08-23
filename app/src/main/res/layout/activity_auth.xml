@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="com.boxin.financial.ui.my.auth.AuthenticationActivity">
+
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/head_common" />
+
+    <RelativeLayout
+        style="@style/MyDivRL_H">
+
+        <TextView
+            style="@style/MyDivRL_H_Text"
+            android:layout_toRightOf="@id/img8"
+            android:text="真实姓名" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="姓名"/>
+
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+
+    <RelativeLayout
+        style="@style/MyDivRL_H">
+
+        <TextView
+            style="@style/MyDivRL_H_Text"
+            android:layout_toRightOf="@id/img8"
+            android:text="手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="15669900909"/>
+
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+    <RelativeLayout
+        style="@style/MyDivRL_H">
+
+        <TextView
+            style="@style/MyDivRL_H_Text"
+            android:layout_toRightOf="@id/img8"
+            android:text="身份证号码" />
+
+        <TextView
+            android:id="@+id/tv_id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="309200989892893"/>
+
+    </RelativeLayout>
+
+    <View style="@style/Common_Line_Height" />
+    <RelativeLayout
+        style="@style/MyDivRL_H">
+
+        <TextView
+            style="@style/MyDivRL_H_Text"
+            android:layout_toRightOf="@id/img8"
+            android:text="汇付天下账号" />
+
+        <TextView
+            android:id="@+id/tv_pay_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="299099090909887766544"/>
+
+    </RelativeLayout>
+
+    <View style="@style/Common_Line"/>
+    <RelativeLayout
+        style="@style/MyDivRL_H">
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            style="@style/MyDivRL_H_Text"
+            android:layout_toRightOf="@id/img8"
+            android:text="建设银行" />
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="299099090909887766544"/>
+
+    </RelativeLayout>
+</LinearLayout>

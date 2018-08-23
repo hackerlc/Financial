@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.my.hosting.HostingActivity">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColor="@color/colorTextMain"
+            android:textColorHint="@color/colorTextSubordinate"
+            android:text="手机号"/>
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:background="@null"
+            android:textColor="@color/colorTextSubordinate"
+            tools:text="18888888"/>
+    </LinearLayout>
+
+    <View style="@style/Common_Line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:textSize="@dimen/common_edit_size"
+            android:textColor="@color/colorTextMain"
+            android:textColorHint="@color/colorTextSubordinate" />
+    </LinearLayout>
+
+    <View style="@style/Common_Line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginRight="@dimen/common_padding"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_id_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:textSize="@dimen/common_edit_size"
+            android:hint="请输入身份证"
+            android:textColor="@color/colorTextMain"
+            android:textColorHint="@color/colorTextSubordinate" />
+    </LinearLayout>
+
+    <View style="@style/Common_Line"/>
+
+    <Button android:id="@+id/btn_ok"
+        style="@style/Common_Btn"
+        android:layout_marginTop="20dp"
+        android:text="下一步"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <color name="colorPrimary">#FF450E</color>
+    <color name="colorPrimary_FB7A3D">#FB7A3D</color>
+    <color name="colorPrimaryAlf">#72ff3a00</color>
+    <color name="colorPrimaryDark">#dea391</color>
+    <color name="colorAccent">#FFB54C</color>
+    <color name="colorAccent_FF4C4C">#FF4C4C</color>
+    <color name="colorAccent_3999FF">#3999FF</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="bg_line">#a9a9a9</color>
+    <color name="colorTextMain">#737373</color>
+    <color name="colorTextMain_Title">#1A1A1A</color>
+    <color name="colorTextMain_Title_2F3032">#2F3032</color>
+    <color name="colorTextSubordinate">#CCCCCC</color>
+    <color name="colorTextSubordinate_99">#999999</color>
+    <color name="colorTextSubordinate_EE">#eeeeee</color>
+    <color name="colorTextSubordinate_CB">#cbcbcb</color>
+    <color name="colorTextSubordinate_CA">#cacaca</color>
+    <color name="colorLine">#f5f5f5</color>
+    <color name="transparent_90">#99000000</color>
+    <!--financial-->
+    <color name="financial_type">#C620EA</color>
+    <color name="color09AE18">#09AE18</color>
+    <color name="color1A1A1A">#1A1A1A</color>
+    <color name="colorFF3A3A">#FF3A3A</color>
+    <!--home banner btn start end color-->
+    <color name="home_banner_btn_start">#ca0000</color>
+    <color name="home_banner_btn_end">#ff1313</color>
+
+</resources>

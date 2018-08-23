@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.boxin.financial.ui.financial.detail.FinancialDetailActivity">
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/head_common" />
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/Common_Btn_Flat"
+        android:text="授权出借"/>
+    <com.boxin.financial.view.XScrollView
+        android:id="@+id/sv_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ic_head"
+        android:layout_above="@id/btn_ok">
+        <LinearLayout
+            android:id="@+id/scrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_top_fm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:showIn="@layout/fragment_financial_info">
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_financial_detail_bottom" />
+
+                <TextView
+                    android:id="@+id/tvUpScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="上拉查看图文详情" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.boxin.financial.view.XScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_ok"
+        android:layout_below="@+id/ic_head"
+        android:fillViewport="true"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/scrollContainer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_head_top_"
+            android:visibility="visible">
+
+            <!--给marginTop一个高度的负值，隐藏下拉的头-->
+            <LinearLayout
+                android:id="@+id/llDownScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_financial_detail_top"/>
+
+                <TextView
+                    android:id="@+id/tvDownScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="4dp"
+                    android:text="下拉收起图文详情"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bottom_fm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llDownScroll"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

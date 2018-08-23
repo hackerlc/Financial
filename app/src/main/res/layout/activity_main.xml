@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boxin.financial.ui.demo.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <RelativeLayout
+            android:id="@+id/tab_home"
+            style="@style/MainBottomTabRL">
+
+            <ImageView
+                android:id="@+id/tab_home_icon"
+                style="@style/MainBottomTabRL_IV"
+                android:src="@drawable/select_home_bar" />
+
+            <TextView
+                android:id="@+id/tab_home_text"
+                style="@style/MainBottomTabRL_TV"
+                android:layout_below="@+id/tab_home_icon"
+                android:text="@string/main_bottom_name_home"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tab_financial"
+            style="@style/MainBottomTabRL">
+
+            <ImageView
+                android:id="@+id/tab_financial_icon"
+                style="@style/MainBottomTabRL_IV"
+                android:src="@drawable/select_financial_bar"/>
+
+            <TextView
+                android:id="@+id/tab_financial_text"
+                style="@style/MainBottomTabRL_TV"
+                android:layout_below="@+id/tab_financial_icon"
+                android:text="@string/main_bottom_name_financial"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/tab_my"
+            style="@style/MainBottomTabRL">
+
+            <ImageView
+                android:id="@+id/tab_my_icon"
+                style="@style/MainBottomTabRL_IV"
+                android:src="@drawable/select_my_bar"/>
+
+            <TextView
+                android:id="@+id/tab_my_text"
+                style="@style/MainBottomTabRL_TV"
+                android:layout_below="@+id/tab_my_icon"
+                android:text="@string/main_bottom_name_my"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line1"
+        android:layout_above="@id/ll_bottom_bar"
+        style="@style/Common_Line"/>
+    <RelativeLayout
+        android:id="@+id/rl_div"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:layout_above="@+id/line1">
+
+    </RelativeLayout>
+</RelativeLayout>

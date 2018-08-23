@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">浙财宝</string>
+    <string name="guide_btn_text">立即体验</string>
+    <string name="main_bottom_name_home">首页</string>
+    <string name="main_bottom_name_financial">投资</string>
+    <string name="main_bottom_name_my">我的</string>
+    <string name="common_financial_profit">预期年化收益率</string>
+    <string name="financial_info">内部评级,仅供参考</string>
+    <string name="pwd_digits">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM~!@#$%^*()-=_+|\{}[],./?`</string>
+    <string name="recharge_info">温馨提示:\n\n1:首次充值需要绑定您使用的银行可为默认银行卡，请选择的常用银行卡\n\n2:充值，提现操作只能使用绑定的同一张银行卡\n\n3:银行卡的解绑，换绑操作，需要到汇付天下平台进行操作</string>
+
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"请绘制手势密码"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制手势密码"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+</resources>

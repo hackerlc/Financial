@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="com.boxin.financial.ui.my.setting.SettingActivity">
+
+    <include
+        android:id="@+id/ic_head"
+        layout="@layout/head_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:id="@+id/rl_psd"
+            style="@style/Setting_Item">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="登录密码"/>
+
+            <ImageView
+                android:id="@+id/left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_my_item_right"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="修改"
+                android:textColor="@color/colorTextSubordinate_99"
+                android:layout_toLeftOf="@id/left_img"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View style="@style/Common_Line"/>
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            style="@style/Setting_Item">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="修改手机号"/>
+
+            <ImageView
+                android:id="@+id/left_phone_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_my_item_right"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="修改"
+                android:textColor="@color/colorTextSubordinate_99"
+                android:layout_toLeftOf="@id/left_phone_img"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View style="@style/Common_Line"/>
+        <RelativeLayout
+            android:id="@+id/rl_touch"
+            style="@style/Setting_Item">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="手势密码"/>
+
+            <Switch
+                android:id="@+id/sw_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track"/>
+
+        </RelativeLayout>
+        <View style="@style/Common_Line"/>
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            style="@style/Setting_Item"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="关于我们"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_my_item_right"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_pingce"
+            style="@style/Setting_Item"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="风险评测"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bg_my_item_right"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_version"
+            style="@style/Setting_Item">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextMain_Title"
+                android:text="版本信息"/>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                tools:text="V1.0"/>
+
+        </RelativeLayout>
+        <View style="@style/Common_Line"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_exit"
+        style="@style/Common_Btn"
+        android:layout_marginTop="76dp"
+        android:text="安全退出"/>
+</LinearLayout>

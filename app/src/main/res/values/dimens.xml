@@ -1,0 +1,39 @@
+<resources>
+    <!--common-->
+    <dimen name="common_line_size">0.5dp</dimen>
+    <dimen name="common_line_height_size">8dp</dimen>
+    <dimen name="pulldown_head_margin">20dp</dimen>
+    <dimen name="common_btn">50dp</dimen>
+    <dimen name="common_padding">20dp</dimen>
+    <dimen name="common_div">50dp</dimen>
+    <dimen name="common_edit_size">15sp</dimen>
+
+    <!--common head-->
+    <dimen name="common_head_25">25dp</dimen>
+    <dimen name="common_head_top">52dp</dimen>
+    <dimen name="common_head_top_">-42dp</dimen>
+    <dimen name="common_head_top_title">16sp</dimen>
+    <dimen name="common_head_top_left_text">16sp</dimen>
+    <dimen name="common_head_top_left_right_margin">12dp</dimen>
+    <dimen name="common_head_top_img_size">40dp</dimen>
+
+    <!--head banner-->
+    <dimen name="head_banner_left_right_margin">24dp</dimen>
+
+
+    <!--item common financial div margins-->
+    <dimen name="common_financial_margins">12dp</dimen>
+    <dimen name="common_financial_name">12sp</dimen>
+    <dimen name="common_financial_time">14sp</dimen>
+    <dimen name="common_financial_profit">20sp</dimen>
+    <dimen name="common_financial_left_right_margin">12dp</dimen>
+
+
+    <!--view CollapsingAvatarToolbar-->
+    <dimen name="default_collapsed_padding">72dp</dimen>
+    <dimen name="default_expanded_padding">16dp</dimen>
+    <dimen name="default_collapsed_image_size">40dp</dimen>
+    <dimen name="default_expanded_image_size">60dp</dimen>
+    <dimen name="default_collapsed_text_size">18sp</dimen>
+    <dimen name="default_expanded_text_size">19sp</dimen>
+</resources>

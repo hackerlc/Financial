@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.investment.pan.InvestmentPanActivity">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_common_corners_white_div">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/Investment_Pan_Head_Text"
+                android:text="回款日期"/>
+            <TextView
+                style="@style/Investment_Pan_Head_Text"
+                android:text="回款总额(元)"/>
+            <TextView
+                style="@style/Investment_Pan_Head_Text"
+                android:text="回款本金(元)"/>
+            <TextView
+                style="@style/Investment_Pan_Head_Text"
+                android:text="回款收益(元)"/>
+        </LinearLayout>
+        <View style="@style/Common_Line"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_investment_pan"/>
+    </LinearLayout>
+</LinearLayout>

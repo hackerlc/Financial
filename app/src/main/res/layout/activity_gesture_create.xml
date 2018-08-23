@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/bg_close"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/gesturepwd_setting_preview"
+            android:layout_width="65.0dp"
+            android:layout_height="65.0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp">
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_0"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_1"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_2"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp"
+                android:layout_marginTop="10.0dp">
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_3"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_4"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_5"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp"
+                android:layout_marginTop="10.0dp">
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_6"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_7"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+
+                <View
+                    android:id="@+id/gesturepwd_setting_preview_8"
+                    android:layout_width="10.0dp"
+                    android:layout_height="10.0dp"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/grey_point" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/gesturepwd_create_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gesturepwd_setting_preview"
+            android:layout_marginTop="23dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3000000"
+            android:shadowRadius="1.0"
+            android:text="请绘制手势密码"
+            android:textColor="@android:color/black"
+            android:textSize="16.0sp" />
+        <com.boxin.financial.view.gestureview.LockPatternView
+            android:id="@+id/gesturepwd_create_lockview"
+            android:layout_width="250.0dp"
+            android:layout_height="250.0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/gesturepwd_create_text"
+            app:line="@color/colorAccent_3999FF"/>
+        <TextView
+            android:id="@+id/tv_reload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gesturepwd_create_lockview"
+            android:layout_marginTop="23dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3000000"
+            android:shadowRadius="1.0"
+            android:text="重新绘制"
+            android:textColor="@color/colorTextMain"
+            android:textSize="16.0sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>
